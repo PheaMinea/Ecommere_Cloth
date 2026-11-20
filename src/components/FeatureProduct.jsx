@@ -223,7 +223,7 @@ const FeatureProduct = () => {
                     </div>
                     
                     <Link 
-                        to="/products"
+                        to="/shop"
                         className="group inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-[#0d2d4a] to-[#1a4d6e] text-white rounded-full font-medium hover:from-[#1a4d6e] hover:to-[#0d2d4a] transition-all duration-500 shadow-2xl hover:shadow-3xl transform hover:scale-105 relative overflow-hidden"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-[#f8b739] to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>

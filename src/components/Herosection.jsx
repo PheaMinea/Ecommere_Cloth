@@ -84,7 +84,7 @@ const Herosection = () => {
                         {/* CTA Buttons - Khmer Modern Style */}
                         <div className="flex flex-col sm:flex-row gap-6 animate-slide-up delay-600">
                             <Link 
-                                to="/collections"
+                                to="/shop"
                                 className="group relative px-10 py-5 bg-gradient-to-r from-[#0d2d4a] to-[#1a4d6e] text-white rounded-xl hover:shadow-2xl hover:shadow-[#0d2d4a]/30 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden"
                             >
                                 <span className="font-semibold tracking-wider relative z-10">Explore Collection</span>
