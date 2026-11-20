@@ -11,17 +11,14 @@ const Cart = () => {
     removeFromCart,
     updateQuantity,
     clearCart,
-    getCartTotal,
     getCartSubtotal,
     getDiscountAmount,
     getShippingCost,
     getTaxAmount,
     getOrderTotal,
-    getCartSummary,
     formatCurrency,
     toggleWishlist,
     isInWishlist,
-    getCartRecommendations,
     moveAllToCart,
   } = useCart();
 
@@ -33,14 +30,11 @@ const Cart = () => {
     }
   };
 
-  const cartSummary = getCartSummary();
   const subtotal = getCartSubtotal();
   const discount = getDiscountAmount();
   const shipping = getShippingCost();
   const tax = getTaxAmount();
   const total = getOrderTotal();
-
-  const recommendations = getCartRecommendations();
 
   const displayCurrency = (amount, showKhmer = false) =>
     formatCurrency(amount, showKhmer, false);

@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import data from "../data";
 import { useState } from 'react';
 import { useCart } from '../components/ShopContext';
@@ -172,7 +172,7 @@ const ProductDetail = () => {
                         <div>
                             <div className="flex items-center justify-between mb-3">
                                 <h3 className="text-sm font-medium text-gray-900">Size</h3>
-                                <a href="#" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Size guide</a>
+                                <Link to="/contact" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">Size guide</Link>
                             </div>
                             <div className="grid grid-cols-5 gap-2">
                                 {['XS', 'S', 'M', 'L', 'XL'].map((size) => (

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useMemo, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 /* =========================
    CREATE CONTEXT
@@ -150,37 +150,34 @@ export const CartProvider = ({ children }) => {
   const getWishlistRecommendations = () => [];
 
   /* ---------- CONTEXT VALUE ---------- */
-  const value = useMemo(
-    () => ({
-      cartItems,
-      wishlistItems,
-      cartCount,
-      wishlistCount,
+  const value = {
+    cartItems,
+    wishlistItems,
+    cartCount,
+    wishlistCount,
 
-      addToCart,
-      removeFromCart,
-      updateQuantity,
-      clearCart,
+    addToCart,
+    removeFromCart,
+    updateQuantity,
+    clearCart,
 
-      toggleWishlist,
-      isInWishlist,
-      moveAllToCart,
+    toggleWishlist,
+    isInWishlist,
+    moveAllToCart,
 
-      getCartSubtotal,
-      getDiscountAmount,
-      getShippingCost,
-      getTaxAmount,
-      getOrderTotal,
-      getCartTotal,
-      getCartSummary,
+    getCartSubtotal,
+    getDiscountAmount,
+    getShippingCost,
+    getTaxAmount,
+    getOrderTotal,
+    getCartTotal,
+    getCartSummary,
 
-      formatCurrency,
+    formatCurrency,
 
-      getCartRecommendations,
-      getWishlistRecommendations,
-    }),
-    [cartItems, wishlistItems]
-  );
+    getCartRecommendations,
+    getWishlistRecommendations,
+  };
 
   return (
     <ShopContext.Provider value={value}>
